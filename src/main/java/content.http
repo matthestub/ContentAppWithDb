@@ -1,0 +1,35 @@
+
+### Get all content objects
+GET http://localhost:8080/api/content
+
+### Add new content to the in memory list
+POST http://localhost:8080/api/content
+Content-Type: application/json
+
+{
+    "id": 2,
+    "title": "My second content",
+    "description": "This is my second blog I've created",
+    "status": "PUBLISHED",
+    "contentType": "BLOG",
+    "dateCreated": "2023-05-29T14:28:27.9263105",
+    "dateUpdated": null,
+    "url": "/2sBlog"
+}
+
+
+
+### Update existing element
+PUT http://localhost:8080/api/content
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "My second content updated",
+  "description": "This is my second blog I've created updated",
+  "status": "PUBLISHED",
+  "contentType": "BLOG",
+  "dateCreated": "2023-05-29T14:28:27.9263105",
+  "dateUpdated": "2023-05-29T14:58:27.9263105",
+  "url": "/2sBlog"
+}
